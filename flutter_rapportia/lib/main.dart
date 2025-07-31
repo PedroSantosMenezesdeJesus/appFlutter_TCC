@@ -25,9 +25,6 @@ class MainAPP extends State{
   @override
   Widget build(BuildContext context) {
 
-    //final screenWitdh = MediaQuery.of(context).size.width;
-    //final screenHeight = MediaQuery.of(context).size.height;
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       
@@ -36,7 +33,7 @@ class MainAPP extends State{
         
         
         appBar: AppBar(
-          title: const Text('app tcc'),
+          title: const Text('app tcc', style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1))),
           centerTitle: true,
           backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
@@ -57,69 +54,89 @@ class MainAPP extends State{
             child: Column(
               children: [
 
-                FilledButton.icon(
-                  onPressed: () => Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => const CreatorsPag()),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const CreatorsPag()),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
+                      minimumSize: WidgetStatePropertyAll<Size>(Size(250, 95)),
+                    ), 
+                    icon: Icon(Icons.people_alt_rounded, size: 25,),
+                    label: const Text('Criadores', textScaler: TextScaler.linear(2))
                   ),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
-                  ), 
-                  icon: Icon(Icons.people_alt_rounded),
-                  label: const Text('Criadores')
                 ),
 
-                FilledButton.icon(
-                  onPressed: () => Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => const FiguraPag()),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const FiguraPag()),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
+                      minimumSize: WidgetStatePropertyAll<Size>(Size(250, 95)),
+                    ), 
+                    icon: Icon(Icons.tag_faces, size: 25,),
+                    label: const Text('Figurinha', textScaler: TextScaler.linear(2))
                   ),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
-                  ), 
-                  icon: Icon(Icons.tag_faces),
-                  label: const Text('Figurinha')
                 ),
 
-                FilledButton.icon(
-                  onPressed: () => Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => const JogoPag()),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const JogoPag()),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
+                      minimumSize: WidgetStatePropertyAll<Size>(Size(250, 95)),
+                    ), 
+                    icon: Icon(Icons.games, size: 25,),
+                    label: const Text('Jogo', textScaler: TextScaler.linear(2))
                   ),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
-                  ), 
-                  icon: Icon(Icons.games),
-                  label: const Text('Jogo')
                 ),
 
-                FilledButton.icon(
-                  onPressed: () => Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => const QuizPag()),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const QuizPag()),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
+                      minimumSize: WidgetStatePropertyAll<Size>(Size(250, 95)),
+                    ), 
+                    icon: Icon(Icons.quiz, size: 25,),
+                    label: const Text('Quiz', textScaler: TextScaler.linear(2))
                   ),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
-                  ), 
-                  icon: Icon(Icons.quiz),
-                  label: const Text('Quiz')
                 ),
 
-                FilledButton.icon(
-                  onPressed: () => Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => const PersonagemPag()),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const PersonagemPag()),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
+                      minimumSize: WidgetStatePropertyAll<Size>(Size(250, 95)),
+                    ), 
+                    icon: Icon(Icons.tag_faces, size: 25,),
+                    label: const Text('Personagens', textScaler: TextScaler.linear(2))
                   ),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromRGBO(29, 60, 124, 1)),
-                  ), 
-                  icon: Icon(Icons.tag_faces),
-                  label: const Text('Personagens')
                 ),
 
               ],
