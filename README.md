@@ -2,7 +2,7 @@
 
 https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
 
-´´´
+```
 import 'package:flutter/material.dart';
 import 'package:flutter_rapportia/personagens.dart';
 import 'package:flutter_rapportia/jogo.dart';
@@ -181,4 +181,4 @@ class MainAPP extends State{
   }
 }
 
-´´´
+```
