@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void personagempag() {
-  runApp(const PersonagemPag());
+void galeriapag() {
+  runApp(const GaleriaPag());
 }
 
-class PersonagemPag extends StatelessWidget{
-  const PersonagemPag({super.key});
+class GaleriaPag extends StatelessWidget{
+  const GaleriaPag({super.key});
 
   @override
 
@@ -17,7 +17,7 @@ class PersonagemPag extends StatelessWidget{
       backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('personagem'),
+          title: const Text('galeria'),
           centerTitle: true,
           backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
@@ -54,7 +54,7 @@ class PersonagemPag extends StatelessWidget{
 
                   child: Column(
                     children: [
-                      Text('Personagens')
+                      Text('Galeria')
                     ],
                   ),
                 );

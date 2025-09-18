@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-void personagempag() {
-  runApp(const PersonagemPag());
+void storypag() {
+  runApp(const StoryPag());
 }
 
-class PersonagemPag extends StatelessWidget{
-  const PersonagemPag({super.key});
+class StoryPag extends StatelessWidget{
+  const StoryPag({super.key});
 
   @override
 
   Widget build(BuildContext context) {
+
     final ScrollController controle = ScrollController();
 
     return Scaffold(
@@ -17,7 +18,7 @@ class PersonagemPag extends StatelessWidget{
       backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('personagem'),
+          title: const Text('Historia'),
           centerTitle: true,
           backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
@@ -54,7 +55,7 @@ class PersonagemPag extends StatelessWidget{
 
                   child: Column(
                     children: [
-                      Text('Personagens')
+                      Text('História')
                     ],
                   ),
                 );
