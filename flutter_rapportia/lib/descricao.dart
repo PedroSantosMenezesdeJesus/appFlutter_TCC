@@ -17,12 +17,11 @@ class DescricaoPag extends StatelessWidget{
 
     return Scaffold(
 
-      backgroundColor: Color.fromRGBO(241, 191, 39, 1),
+      //backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('PERSONAGENS', style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 255, 255, 255))),
           centerTitle: true,
-          backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
+          //backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
         ),
 
@@ -51,7 +50,7 @@ class DescricaoPag extends StatelessWidget{
                   height: MediaQuery.of(context).size.height,
 
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(16, 25, 50, 1),
+                    //color: Color.fromRGBO(16, 25, 50, 1),
                     borderRadius: BorderRadius.circular(16)
                   ),    
 
@@ -59,11 +58,11 @@ class DescricaoPag extends StatelessWidget{
                     mainAxisSize: MainAxisSize.min,
 
                     children: [
-                      Text(personagem.nome, style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 255, 255, 255)), textAlign: TextAlign.center,),
+                      Text(personagem.nome, style: TextStyle(fontSize: 20, color:Color.fromRGBO(0, 0, 0, 1)), textAlign: TextAlign.center,),
                       Padding(padding: EdgeInsets.all(8)),
                       Image.asset(personagem.img, width: 300, height: 200,),
                       Padding(padding: EdgeInsets.all(8)),
-                      Text(personagem.descricao, style: TextStyle(fontSize: 16, color:Color.fromARGB(255, 255, 255, 255)),),
+                      Text(personagem.descricao, style: TextStyle(fontSize: 16, color:Color.fromRGBO(0, 0, 0, 1)),),
                     ],
                   ),
                 );

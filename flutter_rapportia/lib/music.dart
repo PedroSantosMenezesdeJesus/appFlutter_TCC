@@ -46,12 +46,11 @@ class MusicPAG extends State{
 
     return Scaffold(
 
-      backgroundColor: Color.fromRGBO(241, 191, 39, 1),
+      //backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('TRILHA SONORA', style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 255, 255, 255))),
           centerTitle: true,
-          backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
+          //backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
         ),
 
@@ -80,7 +79,7 @@ class MusicPAG extends State{
                   height: MediaQuery.of(context).size.height,
 
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(16, 25, 50, 1),
+                    //color: Color.fromRGBO(16, 25, 50, 1),
                     borderRadius: BorderRadius.circular(16)
                   ),    
 
@@ -89,6 +88,10 @@ class MusicPAG extends State{
                     mainAxisSize: MainAxisSize.max,
 
                     children: [
+
+                      Text("Trilha Sono", style: TextStyle(fontSize: 20, color:Color.fromRGBO(0, 0, 0, 1))),
+
+
                       Expanded(
                         child: ListView.builder(
 

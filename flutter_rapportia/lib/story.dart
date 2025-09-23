@@ -15,12 +15,11 @@ class StoryPag extends StatelessWidget{
 
     return Scaffold(
 
-      backgroundColor: Color.fromRGBO(241, 191, 39, 1),
+      //backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('HISTÓRIA', style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 255, 255, 255))),
           centerTitle: true,
-          backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
+          //backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
         ),
 
@@ -49,7 +48,7 @@ class StoryPag extends StatelessWidget{
                   height: MediaQuery.of(context).size.height,
 
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(16, 25, 50, 1),
+                    //color: Color.fromRGBO(16, 25, 50, 1),
                     borderRadius: BorderRadius.circular(16)
                   ),    
 
@@ -58,7 +57,7 @@ class StoryPag extends StatelessWidget{
                     mainAxisSize: MainAxisSize.max,
 
                     children: [
-                      Text('História', style: TextStyle(fontSize: 20, color: const Color.fromARGB(255, 255, 255, 255)))
+                      Text('História', style: TextStyle(fontSize: 20, color: const Color.fromRGBO(0, 0, 0, 1)))
                     ],
                   ),
                 );

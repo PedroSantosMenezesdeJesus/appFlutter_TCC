@@ -46,12 +46,11 @@ class PersonagemPAG extends State{
 
     return Scaffold(
 
-      backgroundColor: Color.fromRGBO(241, 191, 39, 1),
+      //backgroundColor: Color.fromRGBO(241, 191, 39, 1),
         
         appBar: AppBar(
-          title: const Text('PERSONAGENS', style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 255, 255, 255))),
           centerTitle: true,
-          backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
+          //backgroundColor: const Color.fromRGBO(29, 60, 124, 1),
           
         ),
 
@@ -79,71 +78,51 @@ class PersonagemPAG extends State{
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
 
+
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(16, 25, 50, 1),
+                    //color: Color.fromRGBO(16, 25, 50, 1),
                     borderRadius: BorderRadius.circular(16)
                   ),    
 
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    mainAxisSize: MainAxisSize.max,
+                    mainAxisSize: MainAxisSize.max, 
 
                     children: [
+
+                      Text('PERSONAGENS', style: TextStyle(fontSize: 20, color:Color.fromRGBO(0, 0, 0, 1))),
 
                       Expanded(
 
                         child: ListView.builder(
 
                           itemCount: personagem.length,
-                          shrinkWrap: true,
                           padding: const EdgeInsets.all(5),
-                          scrollDirection: Axis.vertical,
-                          clipBehavior: Clip.antiAlias,
 
                           itemBuilder: (BuildContext ctx, index) 
                           {
-                            
-                            return Card
-                            (
-                              margin: EdgeInsets.all(32), 
-                              
-                              child: Column(
-                                children: [
+                            return Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisSize: MainAxisSize.max,
 
-                                  Row(
-                                    children: [
-                                      Image.asset(personagem[index].img, width: 370, height: 200,),
-                                    ],
+                              children: [
+                                Padding(padding: EdgeInsets.all(16)),
+
+                                GestureDetector(
+                                  onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const DescricaoPag(),
+                                      settings: RouteSettings(
+                                        arguments: personagem[index]
+                                      )
+                                    )
                                   ),
-                                  
-                                  Row(     
-                                    children: [
-                                      Expanded(
-                                        child: ListTile
-                                        (
-                                          contentPadding: EdgeInsets.all(32),
-                                        
-                                          leading: CircleAvatar(
-                                            backgroundImage: AssetImage(personagem[index].img),
-                                          ),
-                                          title: Text(personagem[index].nome),
-                                          hoverColor: const Color.fromRGBO(241, 191, 39, 1),
-                                          onTap: () => Navigator.push(
-                                            context, 
-                                            MaterialPageRoute(
-                                              builder: (context) => const DescricaoPag(),
-                                              settings: RouteSettings(
-                                                arguments: personagem[index]
-                                              )
-                                            )
-                                          ),
-                                        
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )
+                                  child: Image.asset(personagem[index].img, width: 400, height: 300),
+                                ),
+
+                                Text(personagem[index].nome, style: TextStyle(color: Color.fromRGBO(0, 0, 0, 1), fontSize: 20),),   
+                              ],
                             );
                           },
                         ),
