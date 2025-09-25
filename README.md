@@ -1,6 +1,18 @@
 # appFlutter_TCC
 
-´´´
+```
+return Container(
+
+                  margin: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(16),
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
+
+                  decoration: BoxDecoration(
+                    //color: Color.fromRGBO(16, 25, 50, 1),
+                    borderRadius: BorderRadius.circular(16)
+                  ),    
+                  
 child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
@@ -48,4 +60,4 @@ child: Column(
                       )
                     ],
                   ),
-´´´
+```
