@@ -1,0 +1,36 @@
+name: flutter_rapportia
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_picker: ^2.1.0
+  flutter_file_dialog: ^3.0.2
+  just_audio: ^0.10.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  path_provider: ^2.1.5
+  http: ^1.5.0
+  
+
+flutter:
+  uses-material-design: true
+  assets: 
+    - img/
+    - audios/
+    - assets/personagens.json
+    - assets/music.json
+    - assets/figuras.json
+    - fonts/
+
+  fonts:
+    - family: Sunshiney
+      fonts: 
+        - asset: fonts/Sunshiney.ttf
