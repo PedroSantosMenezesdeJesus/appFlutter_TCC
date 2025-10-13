@@ -1,0 +1,37 @@
+[
+    {
+        "Mapa_nome" : "Cidade",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/cidade.png"
+    },
+
+    {
+        "Mapa_nome" : "Santuário",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/templo.png"
+    },
+
+    {
+        "Mapa_nome" : "Caverna",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/caverna.png"
+    },
+
+    {
+        "Mapa_nome" : "Deserto",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/deserto.png"
+    },
+
+    {
+        "Mapa_nome" : "Pântano",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/pantano.png"
+    },
+
+    {
+        "Mapa_nome" : "Torre",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/torre.png"
+    }
+]
