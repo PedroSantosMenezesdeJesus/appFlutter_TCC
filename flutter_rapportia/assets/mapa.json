@@ -1,0 +1,37 @@
+[
+    {
+        "Mapa_nome" : "Cidade",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/cidade.png"
+    },
+
+    {
+        "Mapa_nome" : "Santuário",
+        "Mapa_descricao" : "Templo sagrado que previamente era usado para adoração dos deuses, agora é onde Helia se encontra com as vozes dos deuses e recebe sua missão de derrotar a Fome, a Guerra, a Peste e a Morte.",
+        "Mapa_img" : "img/templo.png"
+    },
+
+    {
+        "Mapa_nome" : "Caverna",
+        "Mapa_descricao" : "aaa",
+        "Mapa_img" : "img/caverna.png"
+    },
+
+    {
+        "Mapa_nome" : "Deserto",
+        "Mapa_descricao" : "Um campo de batalha antigo, congelado no tempo. Lâminas enferrujadas e estandartes despedaçados ainda contam histórias de guerras esquecidas. No centro daquele caos petrificado, desperta o Guardião da Guerra: uma armadura viva movida pela raiva de séculos de conflito.",
+        "Mapa_img" : "img/deserto.png"
+    },
+
+    {
+        "Mapa_nome" : "Pântano",
+        "Mapa_descricao" : "Um pântano envenenado, onde a luz do sol não atravessa as névoas. A atmosfera é densa e pesada. Lá, o Guardião da Peste espreita: uma figura esquelética coberta por véus pútridos, que sussurra loucuras e espalha doenças com cada passo.",
+        "Mapa_img" : "img/pantano.png"
+    },
+
+    {
+        "Mapa_nome" : "Montanha",
+        "Mapa_descricao" : "Uma montanha onde o tempo parece suspenso. Os ventos não sopram, os dias não avançam. No topo, entre colunas de pedra e um silêncio absoluto, espera o Guardião da Morte. Ele não fala, não se move, apenas observa.",
+        "Mapa_img" : "img/torre.png"
+    }
+]
