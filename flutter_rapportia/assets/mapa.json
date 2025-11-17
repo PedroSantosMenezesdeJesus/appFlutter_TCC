@@ -31,7 +31,7 @@
         "Mapa_nome" : "Pântano",
         "Mapa_descricao" : "Um pântano envenenado, onde a luz do sol não atravessa as névoas. A atmosfera é densa e pesada. Lá, o Guardião da Peste espreita: uma figura esquelética coberta por véus pútridos, que sussurra loucuras e espalha doenças com cada passo.",
         "Mapa_img" : "img/pantano.png",
-        "Mapa_descricao_img" : "img/cidadeDescricao.png"
+        "Mapa_descricao_img" : "img/pantanoDescricao.png"
     },
 
     {
