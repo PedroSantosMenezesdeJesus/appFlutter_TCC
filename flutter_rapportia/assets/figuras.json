@@ -1,0 +1,43 @@
+[
+    {
+        "Figura" : "img/helia_fig.png",
+        "Figura_nome": "Helia",
+        "Figura_link": "https://drive.google.com/file/d/1fSQinhBazx_0Akj2yueQ2k5qAQaQ4nRq/view?usp=sharing"
+    },
+
+    {
+        "Figura" : "img/hunger_fig.png",
+        "Figura_nome": "Fome",
+        "Figura_link": "https://drive.google.com/file/d/16fXo-bcPsPOL5fOvC8YqZNqqTN5ABany/view?usp=sharing"
+    },
+
+    {
+        "Figura" : "img/war_fig.png",
+        "Figura_nome": "Guerra",
+        "Figura_link": "https://drive.google.com/file/d/1E5-6z2jgMrg6YOhQqgHHUS0fJHJiyFM3/view?usp=drive_link"
+    },
+
+    {
+        "Figura" : "img/plague_fig.png",
+        "Figura_nome": "Peste",
+        "Figura_link": "https://drive.google.com/file/d/11Q_e0VbyfGZuXSUzGpbDBWMTYwQe5DsT/view?usp=sharing"
+    },
+
+    {
+        "Figura" : "img/death_fig.png",
+        "Figura_nome": "Morte",
+        "Figura_link": "https://drive.google.com/file/d/1CaYvqKc7XyMErDNRg6cQ5bthr7tVyc0W/view?usp=sharing"
+    },
+
+    {
+        "Figura" : "img/helia_fig.png",
+        "Figura_nome": "Velho",
+        "Figura_link": "https://drive.google.com/file/d/1fSQinhBazx_0Akj2yueQ2k5qAQaQ4nRq/view?usp=sharing"
+    },
+
+    {
+        "Figura" : "img/deuses.png",
+        "Figura_nome": "Deuses",
+        "Figura_link": "https://drive.google.com/file/d/1ukwVTZ2BTw2Z8pJKkUFqkK_ElehzG3gM/view?usp=sharing"
+    }
+]
