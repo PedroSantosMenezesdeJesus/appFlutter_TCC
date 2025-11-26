@@ -1,0 +1,19 @@
+[
+    {
+        "Music" : "audios/temaPrincipal.mp3",
+        "Music_Name" : "Tema Principal",
+        "Music_Img" : "img/temaPrincipal.png"
+    },
+
+    {
+        "Music" : "audios/temaMenuInicial.mp3",
+        "Music_Name" : "Menu",
+        "Music_Img" : "img/temaPrincipal.png"
+    },
+
+    {
+        "Music" : "audios/temaLuta.mp3",
+        "Music_Name" : "Lutas",
+        "Music_Img" : "img/temaBosses.png"
+    }
+]
