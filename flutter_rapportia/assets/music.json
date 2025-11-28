@@ -4,6 +4,12 @@
         "Music_Name" : "Tema Principal",
         "Music_Img" : "img/temaPrincipal.png"
     },
+    
+    {
+        "Music" : "audios/Exploracao.mp3",
+        "Music_Name" : "Ultima Balada",
+        "Music_Img" : "img/temaPrincipal.png"
+    },
 
     {
         "Music" : "audios/temaMenuInicial.mp3",
