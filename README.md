@@ -1,6 +1,7 @@
 # flutter_rapportia
 
 ## 👥 Grupo 3 Rappportia
+- Intregrantes: Felipe Mussato Rodrigues, Hudson Araújo Barreto, Kauan de Carlo Merida, Pedro Santos Menezes de Jesus, Susana Correia Garcia, Vitória Colussi dos Santos
 
 ## Páginas da Wiki
 - [Barra Navegação](https://github.com/PedroSantosMenezesdeJesus/appFlutter_TCC/wiki/Barra-de-Navegação)
