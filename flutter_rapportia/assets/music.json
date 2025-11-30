@@ -18,6 +18,24 @@
     },
 
     {
+        "Music" : "audios/temaFome.mp3",
+        "Music_Name" : "Fome",
+        "Music_Img" : "img/temaBosses.png"
+    },
+
+    {
+        "Music" : "audios/temaPeste.mp3",
+        "Music_Name" : "Peste",
+        "Music_Img" : "img/temaBosses.png"
+    },
+
+    {
+        "Music" : "audios/temaMorte.mp3",
+        "Music_Name" : "Morte",
+        "Music_Img" : "img/temaBosses.png"
+    },
+
+    {
         "Music" : "audios/temaLuta.mp3",
         "Music_Name" : "Lutas",
         "Music_Img" : "img/temaBosses.png"
