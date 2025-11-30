@@ -3,7 +3,7 @@
 ## 👥 Grupo 3 Rappportia
 
 ## Páginas da Wiki
-- [Barra Navegação]()
+- [Barra Navegação](https://github.com/PedroSantosMenezesdeJesus/appFlutter_TCC/wiki/Barra-de-Navegação)
 - [História](https://github.com/PedroSantosMenezesdeJesus/appFlutter_TCC/wiki/Tela-História)
 - [Personagem](https://github.com/PedroSantosMenezesdeJesus/appFlutter_TCC/wiki/tela-Personagem)
 - [Personagem Descrição](https://github.com/PedroSantosMenezesdeJesus/appFlutter_TCC/wiki/tela-descrição-de-personagem)
