@@ -22,8 +22,10 @@ class GaleriaPag extends StatefulWidget{
 
 class GaleriaPAG extends State{
 
+  // cria uma lista vazia chamada de figurinha, usando a classe Figurinha
   List<Figurinha> figurinha = List.empty(growable: true);
 
+  // função readJson que pega as informações do figuras.json, é decodificada e depois inserida na lista figurinha.
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/figuras.json');
       Iterable data = await json.decode(response);
@@ -54,7 +56,9 @@ class GaleriaPAG extends State{
           
         ),*/
 
+      // SizesBox é necessario para o GriedView funcionar
       body:  SizedBox.expand(
+        // cria um GriedView de duas colunas
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
@@ -62,7 +66,8 @@ class GaleriaPAG extends State{
             mainAxisSpacing: 3,
             childAspectRatio: 1,
           ),
-            
+
+          // quantidade de itens igual a quandidade de itens na lista de figurinha
           itemCount: figurinha.length,
           itemBuilder: (ctx, index) {
             
@@ -79,6 +84,7 @@ class GaleriaPAG extends State{
                 ),
               ),
 
+              // ao toque usa um Navigator para levar a tela de Donwload de figurinhas
               child: GestureDetector(
                 onTap: () => Navigator.push(
                   context, 
