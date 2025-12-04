@@ -20,6 +20,7 @@ class MainApp extends StatefulWidget {
 
 class MainAPP extends State{
 
+  // criando uma lista das paginas do aplicativo para serem usados no bottomNavigationBar
   final List<Widget> pages = [
     StoryPag(),
     PersonagemPag(),
@@ -28,6 +29,7 @@ class MainAPP extends State{
     MusicPag()
   ];
 
+  // variavel int que serve para que mude de valor se relacionando com o valor da lista
   int currentPage = 0;
 
   @override
@@ -37,15 +39,22 @@ class MainAPP extends State{
       debugShowCheckedModeBanner: false,
       
       home: Scaffold(
-        
+
+        //criação de um BottomNavigationBar
         bottomNavigationBar: BottomNavigationBar(
+
+          // Propriedade do BottomNavigationBar que será igual ao valor da variavel currentPage
           currentIndex: currentPage,
+
+          // ao toque muder o valor da currentPage para o valor value
           onTap: (value) {
             setState(() {
               currentPage = value;
             });
           },
 
+          // São os itens do BottomNavigationBar que ao toque ativam o onTap, o que mudará o valor do currentPage
+          
           items: [
 
             BottomNavigationBarItem(
@@ -80,7 +89,7 @@ class MainAPP extends State{
 
           ]
         ),
-
+        // essa linha siginifica que o body da tela main pega o valor da lista pages igual a o valor da currentPage assim fazendo com que mostre a outras telas
         body: pages[currentPage]
       ),
     );
