@@ -11,6 +11,7 @@ class DescricaoPag extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
+    // pega os valores indexs, via o settings.arguments para ter os valores do botão apertado
     final personagem = ModalRoute.of(context)!.settings.arguments as Character;
 
     final ScrollController controle = ScrollController();
