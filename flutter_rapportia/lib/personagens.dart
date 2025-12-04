@@ -97,7 +97,8 @@ class PersonagemPAG extends State{
 
                       Expanded(
 
-                         // cria um listView.builder que criara uma lista com o tamanho igual a da lista de personagem, que mostrara os nome e imagens dos personagens decorrentes ao seus indexs
+                         // cria um listView.builder que criara uma lista com o quantidade igual a de itens na lista de personagem. 
+                         // que mostrara os nome e imagens dos personagens decorrentes ao seus indexs
                         child: ListView.builder(
 
                           itemCount: personagem.length,
