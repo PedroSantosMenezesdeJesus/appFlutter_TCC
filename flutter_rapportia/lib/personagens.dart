@@ -22,8 +22,10 @@ class PersonagemPag extends StatefulWidget{
 
 class PersonagemPAG extends State{
 
+   // cria uma lista vazia chamada de personagem, usando a classe Character (classe dos personagens)
   List<Character> personagem = List.empty(growable: true);
 
+   // função readJson que pega as informações do personagens.json, é decodificada e depois inserida na lista personagem.
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/personagens.json');
       Iterable data = await json.decode(response);
@@ -55,7 +57,7 @@ class PersonagemPAG extends State{
         ), */
 
       body: Center(    
-
+         //cria um scrollbar para o container que basicamente contem todas as informações da tela personagens
           child: Scrollbar(
 
             trackVisibility: true,
@@ -64,7 +66,8 @@ class PersonagemPAG extends State{
             radius: const Radius.circular(20),
             interactive: true,
             controller: controle,
-            
+
+             // cria um listView.builder essencial para que o scrollbar possa funcionar
             child: ListView.builder(
 
               controller: controle,
@@ -94,6 +97,7 @@ class PersonagemPAG extends State{
 
                       Expanded(
 
+                         // cria um listView.builder que criara uma lista com o tamanho igual a da lista de personagem, que mostrara os nome e imagens dos personagens decorrentes ao seus indexs
                         child: ListView.builder(
 
                           itemCount: personagem.length,
@@ -110,6 +114,7 @@ class PersonagemPAG extends State{
 
                                 Text(personagem[index].nome, style: TextStyle(color: Color.fromRGBO(0, 0, 0, 1), fontFamily: 'Sunshiney', fontSize: 36),),
 
+                                 // detecta toque para ativar um navigator que leva a tela de descrição
                                 GestureDetector(
                                   onTap: () => Navigator.push(
                                     context,
