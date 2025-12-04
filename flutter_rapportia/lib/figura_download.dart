@@ -15,10 +15,13 @@ class FiguraPag extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
+    // pega os valores indexs, via o settings.arguments para ter os valores atribuidados ao index do botão
     final figurinha = ModalRoute.of(context)!.settings.arguments as Figurinha;
 
     final ScrollController controle = ScrollController();
 
+    // função de download das figuras, ele pega a figurinha pelo link dela, e cria um arquivo com o nome da figura para ser baixado no disco do usuario
+    
     Future <void> downloadFigura(BuildContext) async {
       String? message;
       final scaffoldMessenger = ScaffoldMessenger.of(context);
@@ -91,6 +94,7 @@ class FiguraPag extends StatelessWidget{
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
 
+                  // local aonde se mostra o nome e imagem da figurinha
                   children: [
                     Padding(padding: EdgeInsets.all(8)),
 
@@ -107,6 +111,7 @@ class FiguraPag extends StatelessWidget{
 
                     Padding(padding: EdgeInsets.all(16)),
 
+                    // botão que ao ser clicado chama a função downloadFigura
                     ElevatedButton.icon(
                       onPressed: () => downloadFigura(context),
                       style: ButtonStyle(
